@@ -59,6 +59,9 @@ class DownloadCommand extends ConsoleKit\Command
      */
     private function downloadYear($year,$options=array())
     {
+        $box = new ConsoleKit\Widgets\Box($this->getConsole(), "Descargando Año - {$year}");
+        $box->write();$this->getConsole()->writeln("");
+
         $url=sprintf(Config::URL,$year);
         $fileName = sprintf(Config::SOURCE_FILE, $year);
 

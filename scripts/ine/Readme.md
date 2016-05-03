@@ -22,6 +22,7 @@ Si se invoca sin subcomandos o argumentos, executa:
     COMMANDS
     
         download [SUBCOMMAND]   Descarga los archivos fuente, pero no los procesa. 
+
                                 Se puede especificar opcionalmente un subcomando:
                     
             year YEAR           Descarga únicamente el año YEAR
@@ -35,7 +36,8 @@ Si se invoca sin subcomandos o argumentos, executa:
                         
                         
         process [SUBCOMMAND]    Procesa los archivos fuente, y crea los archivos CSV/JSON.
-                                Se necesita especdificar un subcomando.
+        
+                                Se puede especificar opcionalmente un subcomando:
         
             year YEAR           Procesa únicamente el año YEAR
             year last           Procesa únicamente el último año
