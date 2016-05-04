@@ -59,9 +59,6 @@ class DownloadCommand extends ConsoleKit\Command
      */
     private function downloadYear($year,$options=array())
     {
-        $box = new ConsoleKit\Widgets\Box($this->getConsole(), "Descargando Año - {$year}");
-        $box->write();$this->getConsole()->writeln("");
-
         $url=sprintf(Config::URL,$year);
         $fileName = sprintf(Config::SOURCE_FILE, $year);
 
@@ -69,6 +66,8 @@ class DownloadCommand extends ConsoleKit\Command
 
         if (!file_exists($destFileNameFull) || isset($options['force']) || isset($options['f'])){
             file_put_contents($destFileNameFull, fopen($url, 'r'));
+            $box = new ConsoleKit\Widgets\Box($this->getConsole(), "Descargando Año - {$year}");
+            $box->write();$this->getConsole()->writeln("");
         }
 
     }

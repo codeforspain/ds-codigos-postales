@@ -113,15 +113,12 @@ class ProcessCommand extends ConsoleKit\Command
 
         $zip = new ZipArchive;
         $zip->open($fileName);
-        //$compressedFileName = 'TRAMOS-NAL.F'. (substr($year,2,2) - 1) . '1231';
         for( $i = 0; $i < $zip->numFiles; $i++ ) {
-            //$name = $zip->statIndex($i);
             if (strstr($zip->statIndex($i)['name'], 'TRAMOS-NAL')) {
                 $zippedSourceFileName = $zip->statIndex($i)['name'];
                 break;
             }
         }
-
 
         if (!isset($zippedSourceFileName)){
             $this->writeerr("Error: TRAMOS-NAL source not found in {$fileName}\n");
@@ -142,6 +139,7 @@ class ProcessCommand extends ConsoleKit\Command
         }
 
         ksort($output);
+
         foreach ($output as $row) {
             fputcsv($file, $row);
         }

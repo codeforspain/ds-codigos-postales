@@ -109,14 +109,14 @@ Este comando devuelve [codigos_postales_municipios_join.csv](data/codigos_postal
 | 28189         | SOTO (EL)               | 28153        | Torremocha de Jarama       | 
 | 28190         | PUEBLA DE LA SIERRA     | 28118        | Puebla de la Sierra        | 
 | 28191         | PRADENA DEL RINCON      | 28117        | Prádena del Rincón         | 
-| 28192         | DEHESA BOYAL            | 28021        | "Berrueco; El"             | 
+| 28192         | DEHESA BOYAL            | 28021        | "Berrueco, El"             | 
 | 28193         | CERCADOS (LOS)          | 28039        | Cervera de Buitrago        | 
 | 28194         | VILLAR (EL)             | 28124        | Robledillo de la Jara      | 
 | 28195         | SERRADA DE LA FUENTE    | 28902        | Puentes Viejas             | 
 | 28196         | PRESA DE PUENTES VIEJAS | 28902        | Puentes Viejas             | 
 | 28200         | JURISDICCION (LA)       | 28131        | San Lorenzo de El Escorial | 
 | 28210         | VALDEMORILLO            | 28160        | Valdemorillo               | 
-| 28211         | PERALEJO                | 28054        | "Escorial; El"             | 
+| 28211         | PERALEJO                | 28054        | "Escorial, El"             | 
 | 28212         | BARRANCOS (LOS)         | 28095        | Navalagamella              | 
 
 
