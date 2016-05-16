@@ -7,7 +7,7 @@ Si no los encuentra, los descarga.
 
 ## Modo de Uso
 
-    $ ./php script.php [COMMAND SUBCOMMAND]] [OPTIONS]
+    $ php script.php [COMMAND SUBCOMMAND]] [OPTIONS]
 
 Si se invoca sin subcomandos o argumentos, executa:
 

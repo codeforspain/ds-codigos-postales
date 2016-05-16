@@ -131,17 +131,20 @@ class ProcessCommand extends ConsoleKit\Command
             $codigo_postal = substr($line,42,5);
             $municipio_id = substr($line,0,5);
             $nombre_entidad_singular = iconv("windows-1252", "UTF-8", trim(substr($line,110,25)));
-            $output[$codigo_postal] = compact('codigo_postal','municipio_id','nombre_entidad_singular');
+            $output[$codigo_postal][$municipio_id] = compact('codigo_postal','municipio_id','nombre_entidad_singular');
 
             if ($includeYear) {
-                $output[$codigo_postal]['year'] = $year;
+                $output[$codigo_postal][$municipio_id]['year'] = $year;
             }
+            $i++;
         }
 
         ksort($output);
 
-        foreach ($output as $row) {
-            fputcsv($file, $row);
+        foreach ($output as $codigos_postales){
+            foreach ($codigos_postales as $codigo_postal){
+                fputcsv($file, $codigo_postal);
+            }
         }
 
     }

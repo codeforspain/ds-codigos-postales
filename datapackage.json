@@ -15,8 +15,6 @@
     "keywords": [
         "Codigo Postal"
     ],
-    "dataDependencies": {
-    },
     "sources": [
         {
             "name": "Callejero del Censo Electoral (INE)",
@@ -143,6 +141,6 @@
             }
         }
     ],
-    "last_updated": "2016-05-03 ",
-    "version": "0.0.3"
+    "last_updated": "2016-05-16 ",
+    "version": "0.0.4"
 }
